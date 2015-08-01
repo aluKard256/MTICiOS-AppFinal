@@ -10,31 +10,31 @@
 	<string>Stuller 1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CD62F2EC5DC59D2166851F1D687AC80BF7B22718</key>
-		<string>https://github.com/aluKard256/MTICiOS-Tarea5-.git</string>
+		<key>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</key>
+		<string>https://github.com/aluKard256/MTICiOS-AppFinal.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Stuller 1/Stuller 1.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CD62F2EC5DC59D2166851F1D687AC80BF7B22718</key>
+		<key>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/aluKard256/MTICiOS-Tarea5-.git</string>
+	<string>https://github.com/aluKard256/MTICiOS-AppFinal.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CD62F2EC5DC59D2166851F1D687AC80BF7B22718</string>
+	<string>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CD62F2EC5DC59D2166851F1D687AC80BF7B22718</string>
+			<string>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MTICiOS-Tarea5</string>
+			<string>MTICiOS-AppFinal</string>
 		</dict>
 	</array>
 </dict>

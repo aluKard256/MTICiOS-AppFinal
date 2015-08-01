@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Medidor -->
+        <!--Medidor-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Stuller_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,74 +13,49 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Medidor de Anillos" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="svj-sz-06E">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="103" y="86" width="195" height="49"/>
-                                </variation>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Imágen de medición" translatesAutoresizingMaskIntoConstraints="NO" id="0xh-Te-8RW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="85" y="217" width="304" height="128"/>
-                                </variation>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tabla de medidas" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-54-hjl">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="394" width="304" height="51"/>
-                                </variation>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPf-7B-a5B">
+                                <rect key="frame" x="32" y="128" width="178" height="174"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medidor de Anillos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLY-8k-bAP">
+                                <rect key="frame" x="16" y="32" width="181" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deslice el triángulo para buscar la medida ideal de anillo." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3O-K2-2Qx">
+                                <rect key="frame" x="218" y="131" width="83" height="168"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="21" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-Q5-fbi">
+                                <rect key="frame" x="30" y="310" width="309" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="GaJ-a2-6fE"/>
+                                </connections>
+                            </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stuller_logo_horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="Gfl-GD-34z">
-                                <rect key="frame" x="230" y="28" width="140" height="50"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="28" width="140" height="50"/>
+                                <rect key="frame" x="204" y="28" width="100" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="205" y="28" width="141" height="69"/>
                                 </variation>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Yk-Q5-fbi">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="83" y="331" width="248" height="31"/>
-                                </variation>
-                            </slider>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="svj-sz-06E"/>
-                                <exclude reference="0xh-Te-8RW"/>
-                                <exclude reference="aZc-54-hjl"/>
-                                <exclude reference="2Yk-Q5-fbi"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="svj-sz-06E"/>
-                                <include reference="0xh-Te-8RW"/>
-                                <include reference="aZc-54-hjl"/>
-                                <include reference="2Yk-Q5-fbi"/>
-                            </mask>
-                        </variation>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.83137254901960789" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Medidor " id="jv2-GG-twG"/>
+                    <tabBarItem key="tabBarItem" title="Medidor" image="diamond25_mod_60px" id="3jk-0p-7HM"/>
                     <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="vPf-7B-a5B" id="mtO-gk-3wm"/>
+                        <outlet property="slider" destination="2Yk-Q5-fbi" id="quR-0O-15f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-48" y="843"/>
+            <point key="canvasLocation" x="-49.5" y="852"/>
         </scene>
         <!--Catálogo-->
         <scene sceneID="cbj-GP-GrP">
@@ -91,42 +66,28 @@
                         <viewControllerLayoutGuide type="bottom" id="WL8-N2-rsc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ids-FD-4hd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Catalogo de Productos" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WJE-Sb-an8">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="73" y="86" width="255" height="49"/>
-                                </variation>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stuller_logo_horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="y78-LF-Jl9">
-                                <rect key="frame" x="230" y="28" width="140" height="50"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="28" width="140" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Catálogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViQ-O1-UrG">
+                                <rect key="frame" x="16" y="32" width="181" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stuller_logo_horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="2L6-kQ-U6m">
+                                <rect key="frame" x="188" y="28" width="100" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="118" y="95" width="152" height="102"/>
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="WJE-Sb-an8"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="WJE-Sb-an8"/>
-                            </mask>
-                        </variation>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.83137254901960789" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Catálogo" id="sjT-sd-KFR"/>
+                    <tabBarItem key="tabBarItem" title="Catálogo" image="catalog2_60px" id="sjT-sd-KFR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GzO-uY-vl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="651" y="-25"/>
+            <point key="canvasLocation" x="735" y="48"/>
         </scene>
         <!--Inicio-->
         <scene sceneID="WrX-Lh-Mg2">
@@ -137,30 +98,41 @@
                         <viewControllerLayoutGuide type="bottom" id="ujo-N2-4YW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CC2-Rf-5yb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stuller_logo_horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="gS5-9C-BRs">
-                                <rect key="frame" x="195" y="28" width="140" height="50"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="28" width="140" height="50"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svY-AE-CSf">
+                                <rect key="frame" x="16" y="318" width="345" height="213"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="416" width="376" height="203"/>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR5-F0-uAi">
+                                <rect key="frame" x="24" y="83" width="289" height="192"/>
+                                <string key="text">Con la aplicación de Stuller usted podrá tener calcular la medida de anillos catálogo completo de herramientas especializadas de joyería.</string>
+                                <fontDescription key="fontDescription" name="GillSans-LightItalic" family="Gill Sans" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="81" width="327" height="192"/>
+                                </variation>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.83137254900000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inicio" id="BX0-do-bbh"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="house58_60px" id="BX0-do-bbh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGW-qb-xGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="651" y="-760"/>
+            <point key="canvasLocation" x="649.5" y="-761.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Q7-9M-7dG">
             <objects>
                 <tabBarController id="WLP-cL-mBW" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="TaR-fW-Efw">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="TaR-fW-Efw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -178,5 +150,8 @@
     </scenes>
     <resources>
         <image name="Stuller_logo_horizontal" width="650" height="241"/>
+        <image name="catalog2_60px" width="32" height="32"/>
+        <image name="diamond25_mod_60px" width="32" height="32"/>
+        <image name="house58_60px" width="32" height="32"/>
     </resources>
 </document>
