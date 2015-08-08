@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5B42F80D-2E64-4095-AC2C-F7D415C076E4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Stuller</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</key>
+		<string>https://github.com/aluKard256/MTICiOS-AppFinal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Stuller/Stuller.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aluKard256/MTICiOS-AppFinal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C7E9E2A344BC9EAFA64B2F609E8539AFD3DF4A63</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MTICiOS-AppFinal</string>
+		</dict>
+	</array>
+</dict>
+</plist>
