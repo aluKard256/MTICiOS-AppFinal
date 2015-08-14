@@ -18,10 +18,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in 1..<23 {
+        for i in 1..<24 {
             images.append(UIImage(named: "\(i)")!)
             
-            slider.minimumTrackTintColor = UIColor.blackColor()
+            slider.minimumTrackTintColor = UIColor.redColor()
             slider.setThumbImage(UIImage(named:"triangle")!, forState: .Normal)
         }
     }
